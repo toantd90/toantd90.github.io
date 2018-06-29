@@ -99,4 +99,21 @@ $(document).ready(function () {
         icon.attr('name', 'menu');
       }
     });
+
+    /* Map */
+    var map = new GMaps({
+      div: '.map',
+      lat: 21.084961,
+      lng: 105.895529,
+      zoom: 12
+    });
+
+    map.addMarker({
+      lat: 21.084961,
+      lng: 105.785529,
+      title: 'Lima',
+      infoWindow: {
+        content: '<p>Hanoi marker</p>'
+      }
+    });
 })
